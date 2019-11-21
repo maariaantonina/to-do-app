@@ -17,7 +17,7 @@ class Creator extends React.Component {
     visibleButtons: false,
   }
 
-  handleChange(event){
+  handleChange(event) {
     // console.log(event);
     this.setState({
       value: event.target.value,
@@ -25,8 +25,8 @@ class Creator extends React.Component {
     });
   }
 
-  handleOK(){
-    if(this.state.value != ''){
+  handleOK() {
+    if (this.state.value != '') {
       this.props.action(this.state.value);
       this.setState({
         value: '',
@@ -35,7 +35,7 @@ class Creator extends React.Component {
     }
   }
 
-  handleCancel(){
+  handleCancel() {
     this.setState({
       value: '',
       visibleButtons: false
@@ -52,7 +52,7 @@ class Creator extends React.Component {
           onChange={event => this.handleChange(event)}
         />
         <div className={styles.buttons + (this.state.visibleButtons ? ' ' + styles.buttonsShown : '')}>
-          <Button onClick={() => this.handleOK()}>OK</Button>
+          <Button onClick={() => this.handleOK()} variant='blue'>OK</Button>
           <Button onClick={() => this.handleCancel()} variant='danger'>cancel</Button>
         </div>
       </div>
