@@ -14,6 +14,8 @@ class Column extends React.Component {
   }
   static propTypes = {
     title: PropTypes.node,
+    cards: PropTypes.node,
+    icon: PropTypes.string,
   }
   static defaultProps = {
     title: 'Title',
@@ -26,8 +28,8 @@ class Column extends React.Component {
           {
             key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
             title,
-          }
-        ]
+          },
+        ],
       }
     ));
   }
