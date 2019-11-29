@@ -1,1 +1,1 @@
-web: node server.js
+web: npm run publish package.json
