@@ -8,7 +8,6 @@ import { settings } from '../../data/dataStore';
 import { Droppable } from 'react-beautiful-dnd';
 
 
-
 const Column = ({ title, icon, cards, addCard, id }) => {
   return (
     <section className={styles.component} >
