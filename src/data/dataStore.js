@@ -91,6 +91,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Home tasks',
+    description: 'Cleaning, decorating, organizing',
+    image: 'https://image.freepik.com/free-vector/pattern-about-cleaning_1284-668.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Technical skills...',
+    description: '..that a front end developer must possess',
+    image: 'https://image.freepik.com/free-vector/game-development-meeting-composition_1284-18048.jpg',
+  },
 ];
 
 const columns = [
