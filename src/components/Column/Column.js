@@ -39,7 +39,7 @@ Column.propTypes = {
   cards: PropTypes.array,
   icon: PropTypes.string,
   addCard: PropTypes.func,
-  id: PropTypes.string,
+  //id: PropTypes.string,
 };
 
 Column.defaultProps = {

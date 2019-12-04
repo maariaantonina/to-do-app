@@ -2,16 +2,17 @@ import React from 'react';
 import Home from '../Home/HomeContainer';
 import Info from '../Info/Info';
 import FAQ from '../FAQ/FAQ';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';
-import { AnimatedSwitch } from 'react-router-transition';
+//import { AnimatedSwitch } from 'react-router-transition';
 import styles from './App.scss';
 import List from '../List/ListContainer';
+import SearchResults from '../SearchResults/SearchResultsContainer';
 
 const App = () => (
   <BrowserRouter>
     <MainLayout>
-      <AnimatedSwitch
+      <Switch
         atEnter={{ opacity: 0 }}
         atLeave={{ opacity: 0 }}
         atActive={{ opacity: 1 }}
@@ -21,7 +22,8 @@ const App = () => (
         <Route exact path="/info" component={Info} />
         <Route exact path="/FAQ" component={FAQ} />
         <Route exact path="/list/:id" component={List} />
-      </AnimatedSwitch>
+        <Route exact path="/search/:id" component={SearchResults} />
+      </Switch>
     </MainLayout>
   </BrowserRouter>
 );
